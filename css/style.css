@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(46, 46, 46); */
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.navbar {
+    background-color: rgb(46, 46, 46) !important;
+}
+.navbar-nav .nav-link, .navbar-brand {
+      color: rgba(255, 255, 255, 0.819) !important;
+      font-weight: bolder;
+}
+.navbar-nav .nav-link:hover {
+        color: white !important;
+}
+
+.title-main{
+      width: auto;
+    min-height: 100vh;
+}
+.display-4, .web{
+    color: white !important;
+}
+.pic{
+    width: 400px;
+    height: 500px;
+}
+.self{
+    background-color: white;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-height: 150vh;
+      min-height: 80vh;
+}
+.about{
+    background-color: rgba(255, 255, 255, 0.803);
+      width: auto;
+    max-height: 250vh;
+}
+
+.rounded-circle-container {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+  }
+.align-items-md-stretch{
+    gap: 1rem;
+}
+.project-container-fluid{
+    background-color: white;
+      width: auto;
+    max-height: 150vh;
+    flex-wrap: wrap;
+}
+.box {
+    min-width: 100px;
+    height: 200px;
+    margin: 0.5rem;
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+.box img{
+height: 500px; 
+
+}
+  .box:hover {
+    width: 250px;
+    border-radius: 10px;
+    
+  }
+  .box:not(:hover) {
+    transition: width 0.3s ease-in-out;
+  }
+  .footer{
+    max-height: 100vh;
+background-color: black;
+color: white !important;
+  }
+
+.footer .col-6 .fnav .nav-item{
+    color: white !important;
+      }
+ol{
+    flex-wrap: wrap;
+}
+.box{
+    display: flex;
+    align-items: self-end;
+    color: rgba(255, 255, 255, 0.764);
+    text-decoration: none;
+    font-weight: bolder;
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+}
+.projec-name:hover{
+    color: white;
+}
+.box1{
+ background-image: url("../img/Ghost\ Rider.jpeg");
+}
+.box2{
+    background-image: url("../img/batman.jpeg");
+}
+.box3{
+    background-image: url("../img/spman.jpeg");
+}
+.box4 {
+    background-image: url("../img/hulk.jpg");
+}
+.box5{
+    background-image: url("../img/Captain-Marvel.jpg");
+}
+.box6{
+    background-image: url("../img/ca.jpeg");
+}
+.box7{
+    background-image: url("../img/iron-man.jpeg");
+}
+.box8{
+    background-image: url("../img/Blade.jpg");
+}
+/* media queries */
+@media (max-width: 576px) {
+    .align-items-md-stretch{
+        padding: 1rem !important;
+    }
+    .about{
+        background-color: rgba(255, 255, 255, 0.803);
+          width: auto;
+        max-height: 250vh;
+    }
+    .project-container-fluid{
+        background-color: white;
+          width: auto;
+        max-height: 140vh;
+    }
+    .box {
+        width: 50px;
+      }
+      .box:hover {
+        width: 150px;
+        border-radius: 10px;
+        
+      }
+}
+
+@media (min-width: 576px) {
+    .box {
+        width: 100px;
+      }
+      .box:hover {
+        width: 200px;
+        border-radius: 10px;
+      }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .align-items-md-stretch{
+        gap: 0;
+    }
+    .box {
+        width: 100px;
+      }
+      .box:hover {
+        width: 200px;
+        border-radius: 10px;
+      }
+     
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .navbar-brand{
+        margin-left:  4rem;
+    } 
+    .container{
+        margin-top: 8rem;
+    }
+    .box {
+        height: 400px;
+      }
+      .box:hover {
+        width: 250px;
+        border-radius: 10px;
+      }
+     
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .navbar-brand{
+        margin-left: 6rem;
+    }
+ }
